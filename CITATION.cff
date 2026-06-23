@@ -1,78 +1,34 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: >-
-  Disentangling Intrinsic Importance from Emergent Structure
-  in Multi-Expert Orchestration
-message: >-
-  If you use this software, please cite both the article
-  from preferred-citation and the software itself.
-type: software
+title: "Disentangling Intrinsic Importance from Emergent Structure in Multi-Expert Orchestration"
+message: "If you use this work, please cite it using the metadata from this file."
+type: article
+
 authors:
   - family-names: Ghosh
     given-names: Sudipto
-    email: sudipto.ghosh@scai.iitd.ac.in
-    orcid: 'https://orcid.org/0000-0002-1437-8296'
-    affiliation: >-
-      Yardi School of Artificial Intelligence, Indian
-      Institute of Technology Delhi
-  - given-names: Sujoy
-    family-names: Nath
-    email: sujoynathofficial@gmail.com
-    affiliation: >-
-      Department of Electrical Engineering, Indian Institute
-      of Technology Delhi
-  - given-names: Sunny
-    family-names: Manchanda
-    affiliation: >-
-      DRDO Young Scientist Laboratory – Artificial
-      Intelligence, Defence Research and Development
-      Organisation
-    email: sunny.dysl-ai@gov.in
+  - family-names: Nath
+    given-names: Sujoy
+  - family-names: Manchanda
+    given-names: Sunny
   - family-names: Chakraborty
     given-names: Tanmoy
-    email: tanchak@iitd.ac.in
-    affiliation: >-
-      Department of Electrical Engineering and Yardi School
-      of Artificial Intelligence, Indian Institute of
-      Technology Delhi
-identifiers:
-  - type: doi
-    value: 10.48550/arXiv.2602.04291
-repository-code: 'https://github.com/parmanu-lcs2/inform'
-url: 'https://openreview.net/forum?id=4W7sgat04A'
-abstract: >-
-  Multi-expert systems, where multiple Large Language Models
-  (LLMs) collaborate to solve complex tasks, are
-  increasingly adopted for high-performance reasoning and
-  generation. However, the orchestration policies governing
-  expert interaction and sequencing remain largely opaque.
-  We introduce INFORM, an interpretability analysis that
-  treats orchestration as an explicit, analyzable
-  computation, enabling the decoupling of expert interaction
-  structure, execution order, and functional attribution. We
-  use INFORM to evaluate an orchestrator on GSM8K,
-  HumanEval, and MMLU using a homogeneous consortium of ten
-  instruction-tuned experts drawn from LLaMA-3.1 8B, Qwen3
-  8B, and DeepSeek-R1 8B, with controlled
-  decoding-temperature variation, and a secondary
-  heterogeneous consortium spanning 1B-7B parameter models.
-  Across tasks, routing dominance is a poor proxy for
-  functional necessity. We reveal a divergence between
-  relational importance, captured by routing mass and
-  interaction topology, and intrinsic importance, measured
-  via gradient sensitivity: frequently selected experts
-  often act as interaction hubs with limited influence,
-  while sparsely routed experts can be structurally
-  critical. Orchestration behaviors emerge asynchronously,
-  with expert centralization preceding stable routing
-  confidence and expert ordering remaining
-  non-deterministic. Targeted ablations show that masking
-  intrinsically important experts induces disproportionate
-  collapse in interaction structure compared to masking
-  frequent peers, confirming that INFORM exposes functional
-  and structural dependencies beyond accuracy metrics alone.
-license: CC-BY-4.0
-version: 1.0.0
-date-released: '2026-06-21'
+
+journal: "Transactions on Machine Learning Research"
+year: 2026
+url: "https://openreview.net/forum?id=4W7sgat04A"
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Ghosh
+      given-names: Sudipto
+    - family-names: Nath
+      given-names: Sujoy
+    - family-names: Manchanda
+      given-names: Sunny
+    - family-names: Chakraborty
+      given-names: Tanmoy
+  title: "Disentangling Intrinsic Importance from Emergent Structure in Multi-Expert Orchestration"
+  journal: "Transactions on Machine Learning Research"
+  year: 2026
+  url: "https://openreview.net/forum?id=4W7sgat04A"
